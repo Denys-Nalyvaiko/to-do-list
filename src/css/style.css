@@ -1,3 +1,69 @@
-h1 {
-  color: tomato;
+body {
+  background: rgb(8, 7, 105);
+  background: linear-gradient(
+    90deg,
+    rgba(8, 7, 105, 1) 0%,
+    rgba(9, 34, 121, 1) 47%,
+    rgba(108, 138, 218, 1) 100%
+  );
+}
+
+button {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  gap: 15px;
+  transform: translate(-50%, -50%);
+  min-height: 300px;
+  width: 30%;
+  background-color: #fafafa;
+}
+
+.title {
+  color: #212112;
+}
+
+.task-input {
+  width: 300px;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.task-add-btn {
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  color: rgba(8, 7, 105, 1);
+  background-color: rgba(108, 138, 218, 1);
+  border: 2px solid rgba(8, 7, 105, 1);
+  transition: color 200ms ease-in-out 50ms,
+    background-color 200ms ease-in-out 50ms, border 200ms ease-in-out 50ms;
+}
+
+.task-add-btn:hover,
+.task-add-btn:focus {
+  color: rgba(108, 138, 218, 1);
+  background-color: rgba(8, 7, 105, 1);
+  border: 2px solid rgba(108, 138, 218, 1);
+}
+
+.task-list {
+  font-size: 18px;
+  align-self: start;
+  padding-left: 72px;
+}
+
+.task-item {
+  margin-bottom: 10px;
 }
